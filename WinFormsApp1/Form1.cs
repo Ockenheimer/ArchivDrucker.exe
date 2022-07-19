@@ -21,26 +21,25 @@ namespace ArchivDrucker
         {
             textBox1.Text = printNumber.GetNumber().ToString();
         }
-        private void button1_Click(object sender, System.EventArgs e)
+        private void Button1_Click(object sender, System.EventArgs e)
         {
             printNumber.subtrahieren();
             Aktualisieren();
         }
 
-        private void button2_Click(object sender, System.EventArgs e)
+        private void Button2_Click(object sender, System.EventArgs e)
         {
             printNumber.addieren();
             Aktualisieren();
         }
 
-        private void button4_Click(object sender, System.EventArgs e)
+        private void Button4_Click(object sender, System.EventArgs e)
         {
-            using (var form = new Form2(printNumber.GetNumber()))
-            {
-                form.ShowDialog();
-                printNumber.SetNumber((long)form.FileNumber);
-                Aktualisieren();
-            }
+            Form2 form2 = new Form2(printNumber.GetNumber());
+            using Form2 form = form2;
+            form.ShowDialog();
+            printNumber.SetNumber((long)form.FileNumber);
+            Aktualisieren();
 
 
         }

@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
-            // Das die Bezeichnung komisch aussieht ist mir klar.
-            // VS hat das Form einmal durch den Wolf gedreth
             this.buttonSet2 = new System.Windows.Forms.Button();
             this.buttonAbort2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,7 +43,7 @@
             this.buttonSet2.TabIndex = 0;
             this.buttonSet2.Text = "Setzen";
             this.buttonSet2.UseVisualStyleBackColor = true;
-            this.buttonSet2.Click += new System.EventHandler(this.buttonSet2_Click);
+            this.buttonSet2.Click += new System.EventHandler(this.ButtonSet2_Click);
             // 
             // buttonAbort2
             // 
@@ -56,6 +53,7 @@
             this.buttonAbort2.TabIndex = 1;
             this.buttonAbort2.Text = "Abbrechen";
             this.buttonAbort2.UseVisualStyleBackColor = true;
+            this.buttonAbort2.Click += new System.EventHandler(this.ButtonAbort2_Click);
             // 
             // label2
             // 
@@ -67,7 +65,7 @@
             this.label2.Size = new System.Drawing.Size(94, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "(c) ToMaSch 2022";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // textBoxNumber1
             // 
