@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using Microsoft.VisualBasic;
 
 
-namespace WinFormsApp1
+namespace ArchivDrucker
 {
     internal static class Program
     {
@@ -12,11 +12,13 @@ namespace WinFormsApp1
         /// </summary>
         [STAThread]
         static void Main()
-        {
+        {   
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            //Application.Run(new Form2(0));
+            
 
         }
     }

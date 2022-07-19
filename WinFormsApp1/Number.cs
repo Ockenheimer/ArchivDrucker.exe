@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualBasic;
-namespace WinFormsApp1
+namespace ArchivDrucker
 {
 
     public class NumberStore

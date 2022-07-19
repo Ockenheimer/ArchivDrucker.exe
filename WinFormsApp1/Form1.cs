@@ -1,12 +1,13 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 using Microsoft.VisualBasic;
 
 
-namespace WinFormsApp1
+namespace ArchivDrucker
 {
     public partial class Form1 : Form
     {
-        private NumberStore printNumber;
+        public NumberStore printNumber;
 
         public Form1()
         {
@@ -34,25 +35,14 @@ namespace WinFormsApp1
 
         private void button4_Click(object sender, System.EventArgs e)
         {
-            //ShowDialog();
-            
-            printNumber.SetNumber((long)(Interaction.DialogBox("Was zum Fick!")));
-        }
-        //public void ShowMyDialogBox()
-        //{
-        //    Form2 testDialog = new Form2();
+            using (var form = new Form2(printNumber.GetNumber()))
+            {
+                form.ShowDialog();
+                printNumber.SetNumber((long)form.FileNumber);
+                Aktualisieren();
+            }
 
-        //    // Show testDialog as a modal dialog and determine if DialogResult = OK.
-        //    if (testDialog.ShowDialog(this) == DialogResult.OK)
-        //    {
-        //        // Read the contents of testDialog's TextBox.
-        //        this.txtResult.Text = testDialog.TextBox1.Text;
-        //    }
-        //    else
-        //    {
-        //        this.txtResult.Text = "Cancelled";
-        //    }
-        //    testDialog.Dispose();
-        //}
+
+        }
     }
 }
