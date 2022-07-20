@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ArchivDrucker</id>
+    <version>1.0.0</version>
+    <authors>ArchivDrucker</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/Ockenheimer/ArchivDrucker.exe</projectUrl>
+    <description>Package Description</description>
+    <repository type="git" url="https://github.com/Ockenheimer/ArchivDrucker.exe" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework=".NETCoreApp3.1">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\windo\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\netcoreapp3.1\ArchivDrucker.runtimeconfig.json" target="lib\netcoreapp3.1\ArchivDrucker.runtimeconfig.json" />
+    <file src="C:\Users\windo\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\netcoreapp3.1\ArchivDrucker.dll" target="lib\netcoreapp3.1\ArchivDrucker.dll" />
+    <file src="C:\Users\windo\source\repos\WinFormsApp1\README.md" target="\README.md" />
+    <file src="C:\Users\windo\source\repos\WinFormsApp1\LICENSE.md" target="\LICENSE.md" />
+  </files>
+</package>
