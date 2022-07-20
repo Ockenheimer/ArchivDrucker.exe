@@ -60,7 +60,7 @@
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.No;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(272, 234);
+            this.label2.Location = new System.Drawing.Point(272, 230);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 13);
             this.label2.TabIndex = 2;
@@ -88,6 +88,8 @@
             // 
             // Form2
             // 
+            this.AcceptButton = this.buttonSet2;
+            this.CancelButton = this.buttonAbort2;
             this.ClientSize = new System.Drawing.Size(363, 245);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxNumber1);
@@ -95,6 +97,7 @@
             this.Controls.Add(this.buttonAbort2);
             this.Controls.Add(this.buttonSet2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.Name = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();

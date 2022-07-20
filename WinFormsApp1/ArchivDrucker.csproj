@@ -4,12 +4,30 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <PackageLicenseFile>C:\Users\windo\source\repos\Ockenheimer\ArchivDrucker.exe\LICENSE.md</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <SignAssembly>False</SignAssembly>
+    <PackageProjectUrl>https://github.com/Ockenheimer/ArchivDrucker.exe</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Ockenheimer/ArchivDrucker.exe</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage>de-DE</NeutralLanguage>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <ApplicationIcon>printfilefast_11186.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+    <Content Include="printfilefast_11186.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+	<None Include="..\LICENSE.md">
+	  <Pack>True</Pack>
+	  <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

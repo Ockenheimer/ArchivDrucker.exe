@@ -24,7 +24,7 @@ namespace ArchivDrucker
             textBoxNumber1.Text = FileNumber.ToString();
             // Textbox erhält Fokus zum direkten Schreiben
             this.ActiveControl = textBoxNumber1;
-
+            
         }
 
 

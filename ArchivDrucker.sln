@@ -5,16 +5,20 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchivDrucker", "WinFormsApp1\ArchivDrucker.csproj", "{1AEAFB30-F91D-4A56-9486-8B7307128CAC}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ArchivDruckerSetup", "ArchivDruckerSetup\ArchivDruckerSetup.vdproj", "{ED741DAC-9ACC-4DE8-9756-C66C1FE11EB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1AEAFB30-F91D-4A56-9486-8B7307128CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1AEAFB30-F91D-4A56-9486-8B7307128CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AEAFB30-F91D-4A56-9486-8B7307128CAC}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{1AEAFB30-F91D-4A56-9486-8B7307128CAC}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{1AEAFB30-F91D-4A56-9486-8B7307128CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AEAFB30-F91D-4A56-9486-8B7307128CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED741DAC-9ACC-4DE8-9756-C66C1FE11EB1}.Debug|Any CPU.ActiveCfg = Debug
+		{ED741DAC-9ACC-4DE8-9756-C66C1FE11EB1}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
