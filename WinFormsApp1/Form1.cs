@@ -54,21 +54,23 @@ namespace ArchivDrucker
             Font font1 = new Font("Sans Serif", 8);
             Font font2 = new Font("Sans Serif", 55);
             SolidBrush solidBrush = new SolidBrush(Color.Black);
-            PaperSize ps = new PaperSize("custom", 792, 153);
+            PaperSize ps = new PaperSize("custom", 141, 700);
+    
             PrintDocument p = new PrintDocument();
             p.DefaultPageSettings.PaperSize = ps;
             p.DocumentName = "Archivdruck";
             p.DefaultPageSettings.Landscape = true;           
             p.PrintPage += delegate (object sender1, PrintPageEventArgs e1)
             {
-                e1.Graphics.DrawString(archiv, font1, solidBrush, new RectangleF(35, 15, p.DefaultPageSettings.PrintableArea.Width, p.DefaultPageSettings.PrintableArea.Height));
-                e1.Graphics.DrawString(archiv, font1, solidBrush, new RectangleF(401, 15, p.DefaultPageSettings.PrintableArea.Width, p.DefaultPageSettings.PrintableArea.Height));
-                e1.Graphics.DrawString(s, font2, solidBrush, new RectangleF(10, 65, p.DefaultPageSettings.PrintableArea.Width, p.DefaultPageSettings.PrintableArea.Height));
-                e1.Graphics.DrawString(s, font2, solidBrush, new RectangleF(376, 65, p.DefaultPageSettings.PrintableArea.Width, p.DefaultPageSettings.PrintableArea.Height));
-                e1.Graphics.DrawRectangle(new Pen(Color.Black), new Rectangle(0, 0, 792, 153));
+                e1.Graphics.DrawString(archiv, font1, solidBrush, new RectangleF(35, 15, 350,50));
+                //e1.Graphics.DrawString(archiv, font1, solidBrush, new RectangleF(400, 15, 350,50));
+                e1.Graphics.DrawString(s, font2, solidBrush, new RectangleF(0, 50, 350,141));
+          //      e1.Graphics.DrawString(s, font2, solidBrush, new RectangleF(376, 65, 350,141));
+                //e1.Graphics.DrawRectangle(new Pen(Color.Black), new Rectangle(0, 0, 700, 153));
             };
             try
             {
+                p.Print();
                 p.Print();
             }
             catch (Exception ex)
