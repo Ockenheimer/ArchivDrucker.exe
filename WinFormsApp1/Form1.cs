@@ -11,9 +11,10 @@ namespace ArchivDrucker
 
         public Form1()
         {
-            long x = 1234;
+            long x = 66666;
             InitializeComponent();
             printNumber = new NumberStore(x);
+            neueZahl();
             Aktualisieren();
         }
 
@@ -34,13 +35,18 @@ namespace ArchivDrucker
             Aktualisieren();
         }
 
-        private void Button4_Click(object sender, System.EventArgs e)
+        private void neueZahl()
         {
             Form2 form2 = new Form2(printNumber.GetNumber());
             using Form2 form = form2;
             form.ShowDialog();
             printNumber.SetNumber((long)form.FileNumber);
             Aktualisieren();
+        }
+
+        private void Button4_Click(object sender, System.EventArgs e)
+        {
+            neueZahl();
         }
 
         private void button3_Click(object sender, EventArgs e)
