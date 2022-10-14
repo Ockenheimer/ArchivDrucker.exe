@@ -19,4 +19,5 @@ Markus
 Hallo ihr Lieben, 
 
 zum Drucken der Label braucht ihr (Stand Ende 2022) die Software DYMO Connect für den DYMO LabelWriter
+
 Ihr findet die Software unter https://www.dymo.de/support?cfid=online-support
