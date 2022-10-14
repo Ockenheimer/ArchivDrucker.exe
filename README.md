@@ -11,3 +11,11 @@ Check the License and find me for a drink.
 
 Alla Gude!
 Markus
+
+
+#HINWEIS FÜR ADV
+
+Hallo ihr Lieben, 
+
+zum Drucken der Label braucht ihr (Stand Ende 2022) die Software DYMO Connect für den DYMO LabelWriter
+Ihr findet die Software unter https://www.dymo.de/support?cfid=online-support
